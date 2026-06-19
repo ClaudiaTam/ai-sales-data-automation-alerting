@@ -18,3 +18,22 @@ print(df.isnull().sum())
 
 print("\nFirst 5 rows:")
 print(df.head())
+
+
+print("\nUnique values in 'Category':")
+print(df['category'].unique())
+
+print("\nValue counts for 'Category':")
+print(df['category'].value_counts())
+
+print("\nUnique values in 'returned':")
+print(df['returned'].unique())
+
+print("\nValue counts for 'returned':")
+print(df['returned'].value_counts())
+
+print("\nValue of the 'profit margin' \':")
+print(df['profit_margin'].head())
+
+print("\nValue of the 'order date' \':")
+print(df['order_date'].head())

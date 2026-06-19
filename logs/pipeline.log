@@ -1,0 +1,13 @@
+2026-06-16 21:51:51,842 - INFO - Pipeline started
+2026-06-16 21:51:51,981 - INFO - Loaded raw data: 34500 rows, 17 columns
+2026-06-16 21:51:52,029 - INFO - Transformation completed
+2026-06-16 21:51:52,791 - INFO - Output files saved successfully
+2026-06-16 21:51:52,791 - INFO - Low margin rows: 16873
+2026-06-16 21:51:52,792 - INFO - Pipeline finished successfully
+2026-06-16 22:48:16,380 - INFO - Pipeline started
+2026-06-16 22:48:16,538 - INFO - Loaded raw data: 34500 rows, 17 columns
+2026-06-16 22:48:16,595 - INFO - Transformation completed
+2026-06-16 22:48:17,545 - INFO - Output files saved successfully
+2026-06-16 22:48:17,546 - INFO - Low margin rows: 16873
+2026-06-16 22:48:17,546 - INFO - Pipeline finished successfully
+2026-06-16 22:48:18,279 - INFO - DummyJSON snapshots saved successfully
