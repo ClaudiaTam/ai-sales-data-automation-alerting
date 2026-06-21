@@ -15,12 +15,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-with-version: '3.10'
+          python-version: '3.10'
           cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install pandas pandas-gbq google-cloud-bigquery database-modules fastapi uvicorn
+          pip install pandas pandas-gbq google-cloud-bigquery fastapi uvicorn
 
       - name: Run Pipeline
         env:
@@ -36,9 +36,9 @@ jobs:
       - name: Send Success Payload to n8n
         if: success()
         run: |
-          # Read the overall metrics row to send directly to n8n
           python -c "
-          import pandas as pd, requests, json
+          import pandas as pd
+          import requests
           df = pd.read_csv('data/processed/metrics_summary_overall.csv')
           row = df.iloc[0].to_dict()
           payload = {'status': 'success', 'metrics': row}
