@@ -1,0 +1,10 @@
+# requirements.txt - generated from imports found in src/
+# Core data processing
+pandas
+
+# HTTP requests to DummyJSON API
+requests
+
+# BigQuery upload helper
+pandas-gbq
+google-cloud-bigquery
