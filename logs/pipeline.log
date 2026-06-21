@@ -19,22 +19,6 @@
 2026-06-20 15:15:21,378 - INFO - Sales output files saved
 2026-06-20 15:15:21,378 - INFO - Fetching DummyJSON snapshots
 2026-06-20 15:15:22,423 - INFO - DummyJSON snapshots saved
-2026-06-20 15:15:22,424 - ERROR - Pipeline failed: [Errno 13] Permission denied: 'data/snapshots'
-Traceback (most recent call last):
-  File "c:\Users\Claudia Tam\ai-sales-data-automation-alerting\src\main.py", line 44, in main
-    SNAPSHOT_DIR = Path("data/snapshots")
-  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\_path\__init__.py", line 319, in __init__
-    self.root = FastLookup.make(root)
-                ~~~~~~~~~~~~~~~^^^^^^
-  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\_path\__init__.py", line 156, in make
-    return cls(source)
-  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\_path\__init__.py", line 91, in __init__
-    super().__init__(*args, **kwargs)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\__init__.py", line 1462, in __init__
-    self.fp = io.open(file, filemode)
-              ~~~~~~~^^^^^^^^^^^^^^^^
-PermissionError: [Errno 13] Permission denied: 'data/snapshots'
 2026-06-20 15:20:02,960 - INFO - Pipeline started
 2026-06-20 15:20:03,158 - INFO - Loaded raw sales data: 34500 rows, 17 columns
 2026-06-20 15:20:03,213 - INFO - Sales transformation completed
