@@ -11,3 +11,60 @@
 2026-06-16 22:48:17,546 - INFO - Low margin rows: 16873
 2026-06-16 22:48:17,546 - INFO - Pipeline finished successfully
 2026-06-16 22:48:18,279 - INFO - DummyJSON snapshots saved successfully
+2026-06-20 15:15:19,873 - INFO - Pipeline started
+2026-06-20 15:15:20,134 - INFO - Loaded raw sales data: 34500 rows, 17 columns
+2026-06-20 15:15:20,209 - INFO - Sales transformation completed
+2026-06-20 15:15:20,209 - INFO - Cleaned rows: 34500
+2026-06-20 15:15:20,210 - INFO - Low margin flagged rows: 16873
+2026-06-20 15:15:21,378 - INFO - Sales output files saved
+2026-06-20 15:15:21,378 - INFO - Fetching DummyJSON snapshots
+2026-06-20 15:15:22,423 - INFO - DummyJSON snapshots saved
+2026-06-20 15:15:22,424 - ERROR - Pipeline failed: [Errno 13] Permission denied: 'data/snapshots'
+Traceback (most recent call last):
+  File "c:\Users\Claudia Tam\ai-sales-data-automation-alerting\src\main.py", line 44, in main
+    SNAPSHOT_DIR = Path("data/snapshots")
+  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\_path\__init__.py", line 319, in __init__
+    self.root = FastLookup.make(root)
+                ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\_path\__init__.py", line 156, in make
+    return cls(source)
+  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\_path\__init__.py", line 91, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claudia Tam\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\zipfile\__init__.py", line 1462, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'data/snapshots'
+2026-06-20 15:20:02,960 - INFO - Pipeline started
+2026-06-20 15:20:03,158 - INFO - Loaded raw sales data: 34500 rows, 17 columns
+2026-06-20 15:20:03,213 - INFO - Sales transformation completed
+2026-06-20 15:20:03,213 - INFO - Cleaned rows: 34500
+2026-06-20 15:20:03,213 - INFO - Low margin flagged rows: 16873
+2026-06-20 15:20:04,115 - INFO - Sales output files saved
+2026-06-20 15:20:04,116 - INFO - Fetching DummyJSON snapshots
+2026-06-20 15:20:04,926 - INFO - DummyJSON snapshots saved
+2026-06-20 15:20:04,932 - INFO - API products prepared: 50 rows
+2026-06-20 15:20:04,932 - INFO - API cart items prepared: 75 rows
+2026-06-20 15:20:04,938 - INFO - API processed CSVs saved
+2026-06-20 16:24:43,859 - INFO - Pipeline started
+2026-06-20 16:24:44,072 - INFO - Loaded raw sales data: 34500 rows, 17 columns
+2026-06-20 16:24:44,121 - INFO - Sales transformation completed
+2026-06-20 16:24:44,122 - INFO - Cleaned rows: 34500
+2026-06-20 16:24:44,122 - INFO - Low margin flagged rows: 16873
+2026-06-20 16:24:44,991 - INFO - Sales output files saved
+2026-06-20 16:24:44,991 - INFO - Fetching DummyJSON snapshots
+2026-06-20 16:24:45,992 - INFO - DummyJSON snapshots saved
+2026-06-20 16:24:45,999 - INFO - API products prepared: 50 rows
+2026-06-20 16:24:45,999 - INFO - API cart items prepared: 75 rows
+2026-06-20 16:24:46,006 - INFO - API processed CSVs saved
+2026-06-20 16:24:46,007 - INFO - Loading processed data to BigQuery
+2026-06-20 16:25:00,737 - INFO - 50 out of 50 rows loaded.
+2026-06-20 16:25:00,737 - INFO - Loaded 50 rows into BigQuery: sales_pipeline.api_products
+2026-06-20 16:25:08,299 - INFO - 75 out of 75 rows loaded.
+2026-06-20 16:25:08,300 - INFO - Loaded 75 rows into BigQuery: sales_pipeline.api_cart_items
+2026-06-20 16:25:15,661 - INFO - 1 out of 1 rows loaded.
+2026-06-20 16:25:15,662 - INFO - Loaded 1 rows into BigQuery: sales_pipeline.metrics_summary_overall
+2026-06-20 16:25:22,548 - INFO - 7 out of 7 rows loaded.
+2026-06-20 16:25:22,549 - INFO - Loaded 7 rows into BigQuery: sales_pipeline.metrics_summary_by_category
+2026-06-20 16:25:22,549 - INFO - All tables loaded to BigQuery
+
